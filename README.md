@@ -40,6 +40,14 @@ The `shake` script supports the custom Cabal configuration setting `x-shake-pack
 
 Add this setting before the `Executable` section containing your build script. See [here](https://github.com/samplecount/methcla/blob/develop/shakefile.cabal) for an example of a production configuration file that also exports a library.
 
+## Tips and tricks
+
+Since Shake includes some high-level profiling features, usually you don't need to do low-level profiling of the build system. Creating a file `cabal.config` in the top source directory with a line
+
+    Library-Profiling: False
+
+can significantly decrease the time needed for updating the build system.
+
 [cabal]: http://www.haskell.org/cabal/users-guide/
 [shake]: https://github.com/ndmitchell/shake
 [shake-manual]: https://github.com/ndmitchell/shake/blob/master/docs/Manual.md
