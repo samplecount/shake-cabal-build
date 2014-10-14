@@ -29,7 +29,7 @@ If you're using [shake-language-c](https://github.com/samplecount/shake-language
 
 Running `./shake` with any argument not starting with a `.` runs your build script with the arguments passed on the command line, usually Shake options and targets to build.
 
-### Cabal file extensions
+## Cabal file extensions
 
 The `shake` script supports the custom Cabal configuration setting `x-shake-package-dirs`. It allows to specify Cabal source packages that should be added to the sandbox with `cabal add-source`, for example:
 
