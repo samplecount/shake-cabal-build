@@ -18,7 +18,7 @@ The only prerequisite for running the script is installing the latest [Haskell p
           base == 4.*
         , shake
 
-If you're using [shake-language-c](https://github.com/samplecount/shake-language-c), add it to the dependencies as well. Refer to the [Cabal manual][cabal] for more information about configuration file features.
+If you're using [shake-language-c](https://github.com/samplecount/shake-language-c), add it to the dependencies as well. Refer to the [Cabal manual][cabal] for more information about configuration file features. `cabal init` is another way of creating the Cabal file. It can automatically pick up the dependencies referenced from package imports in your `shakefile.hs` (if it exists already).
 
 `./shake .update` creates a [Cabal sandbox](http://www.haskell.org/cabal/users-guide/installing-packages.html#developing-with-sandboxes
 ), installs the dependencies and compiles your build system script.
