@@ -1,4 +1,5 @@
-#!/usr/bin/env runhaskell
+#!/usr/bin/env runhaskell +RTS -I0 -RTS
+{-# OPTIONS_GHC  -with-rtsopts=-I0 -threaded -rtsopts #-}
 
 -- Copyright 2013-2014 Samplecount S.L.
 --
