@@ -6,7 +6,7 @@ The only prerequisite for running the script is the latest [Haskell platform](ht
 
 ## Installation and usage
 
-[Copy](https://raw.githubusercontent.com/samplecount/shake-cabal-build/master/shake) or link the script to your source folder. You can also install `shake-cabal-build` from [Hackage](http://hackage.haskell.org/package/shake-cabal-build) with `cabal install`. The executable is called `shake-cabal-build` in order to avoid a clash with a different executable installed by [Shake][], you can create an alias to a different name if you want.
+[Copy](https://raw.githubusercontent.com/samplecount/shake-cabal-build/master/shake) or link the script to your source folder. You can also install `shake-cabal-build` from [Hackage](http://hackage.haskell.org/package/shake-cabal-build) with `cabal install`. The executable is called `shake-cabal-build` in order to avoid a clash with a different executable installed by [Shake][], you can create an alias with a different name if you want.
 
 Write a file `shakefile.hs` containing Shake rule definitions and create a file `shakefile.cabal` with the following contents:
 
