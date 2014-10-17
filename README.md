@@ -2,9 +2,13 @@
 
 Build systems written in [Shake][] normally need to be compiled, see the [Shake manual][shake-manual] for more information. [shake](https://github.com/samplecount/shake-cabal-build/blob/master/shake) is a simple Haskell script that takes care of all the details. Using the [Cabal][] infrastructure, build scripts are compiled on the fly for execution and also be reused as library components.
 
-The only prerequisite for running the script is installing the latest [Haskell platform](http://www.haskell.org/platform/).
+The only prerequisite for running the script is the latest [Haskell platform](http://www.haskell.org/platform/).
 
-[Copy](https://raw.githubusercontent.com/samplecount/shake-cabal-build/master/shake) or link the script to your source folder and write a file `shakefile.hs` containing Shake rule definitions. Create a file `shakefile.cabal` with the following contents:
+## Installation and usage
+
+[Copy](https://raw.githubusercontent.com/samplecount/shake-cabal-build/master/shake) or link the script to your source folder. You can also install `shake-cabal-build` from [Hackage](http://hackage.haskell.org/package/shake-cabal-build) with `cabal install`. The executable is called `shake-cabal-build` in order to avoid a clash with a different executable installed by [Shake][], you can create an alias to a different name if you want.
+
+Write a file `shakefile.hs` containing Shake rule definitions and create a file `shakefile.cabal` with the following contents:
 
     Name: hearhearme-shakefile
     Version: 0.1.0
@@ -25,7 +29,7 @@ If you're using [shake-language-c](https://github.com/samplecount/shake-language
 
 `./shake .scrub` calls your build script's `clean` target and removes the Cabal sandbox and all build products.
 
-`./shake .init` initializes the sandbox and configures your package. This might be necessary sometimes but usually you don't need that command.
+`./shake .init` initialises the sandbox and configures your package. This might be necessary sometimes but usually you don't need that command.
 
 Running `./shake` with any argument not starting with a `.` runs your build script with the arguments passed on the command line, usually Shake options and targets to build.
 
