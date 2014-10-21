@@ -1,5 +1,7 @@
 # shake-cabal-build
 
+[![Build Status](https://travis-ci.org/samplecount/shake-cabal-build.svg?branch=develop)](https://travis-ci.org/samplecount/shake-cabal-build)
+
 Build systems written in [Shake][] normally need to be compiled, see the [Shake manual][shake-manual] for more information. [shake](https://github.com/samplecount/shake-cabal-build/blob/master/shake) is a simple Haskell script that takes care of all the details. Using the [Cabal][] infrastructure, build scripts are compiled on the fly for execution and also be reused as library components.
 
 The only prerequisite for running the script is the latest [Haskell platform](http://www.haskell.org/platform/).
